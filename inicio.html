@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Perdón</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        #mensaje {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        #botones {
+            display: flex;
+            justify-content: center;
+        }
+
+        .boton {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        #botonSi {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+
+        #botonNo {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #botonNo:hover {
+            transform: translateX(20px);
+        }
+
+        #agradecimiento {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="mensaje">¿Me perdonas?</div>
+
+    <div id="botones">
+        <button class="boton" id="botonSi" onclick="responder(true)">Sí</button>
+        <button class="boton
